@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>calculator</title>
+</head>
+<body>
+    <!-- calculator face-body -->
+    <div class="cal-fbody">
+
+    <!-- Calculator screen -->
+        <div class="cal-screen">
+            <input type="text"  id="myscreen" value="0">
+        </div>
+    <!-- calculator keys & operations(optns)-->
+        <div class="calculator-keys" id="mybuttons">
+            <button onclick="mykeys('1')">1</button>
+            <button onclick="mykeys('2')">2</button>
+            <button onclick="mykeys('3')">3</button>
+            <button onclick="mykeys('+')" class="optns" id="myplus">&plus;</button>
+            <button onclick="mykeys('4')">4</button>
+            <button onclick="mykeys('5')">5</button>
+            <button onclick="mykeys('6')">6</button>
+            <button onclick="mykeys('-')" class="optns" id="myminus">&minus;</button>
+            <button onclick="mykeys('7')">7</button>
+            <button onclick="mykeys('8')">8</button>
+            <button onclick="mykeys('9')">9</button>
+            <button onclick="mykeys('*')" class="optns" id="mytimes">&times;</button>
+            <button onclick="mykeys('0')" id="myzero">0</button>
+            <button onclick="mykeys('.')" class="optns" id="mydot">&dot;</button>
+            <button onclick="mykeys('/')" class="optns" id="mydivide">&div;</button>
+            <button onclick="mycleaner('')" class="optns" id="myclean">C</button>
+            <button onclick="ans('')" class="optns" id="myequal">&equals;</button>
+
+        </div>
+    </div>
+
+    <script>
+    function mykeys(nums) {
+        let myscreen;
+        myscreen = document.getElementById("myscreen");
+        myscreen.value += nums;
+    }
+
+    function mycleaner() {
+        let cleaner;
+        cleaner = document.getElementById("myscreen");
+        cleaner.value = "";
+    }
+    function ans(output) {
+        let equalTo;
+        equalTo = document.getElementById("myscreen");
+        output = eval(equalTo.value);
+        equalTo.value = output;
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+    width: 100vw;
+    height: 100vh;
+}
+.cal-fbody{
+    border: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 227px;
+    height: 380px;
+    box-shadow: 2px 2px 2px 3px brown, -2px -2px 2px 3px brown
+}
+.cal-screen{
+    background-color: black;
+    width: 227px;
+    height: 60px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.cal-screen input{
+    width: 227px;
+    height: 30px;
+    margin-top: 10px;
+    border: none;
+    outline: none;
+    text-align: right;
+    padding: 10px;
+    background: rgba(4, 0, 6, 1);
+    border: none;
+    color: white;
+}
+.calculator-keys{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: red;
+}
+.calculator-keys button{
+    padding: 22.5px;
+    background-color: brown;
+    color: aliceblue;
+    font-weight: bold;
+    cursor: pointer;
+}
+.calculator-keys button:hover{
+    background-color: aqua;
+    color: black
+}
+#myzero{
+    padding: 22.5px 50px;
+    margin-left: -1px;
+}
+#myclean{
+    padding-left: 66px;
+    padding: 22.5px 50px;
+    background-color: blueviolet;
+}
+#myequal{
+    padding: 22.5px 50px;
+    background-color: chartreuse;
+}
+#mydot,#mydivide{
+    padding-right: 25.4px;
+    /* padding-left: -10px; */
+
+}
+#myplus,#myminus,#mytimes,#mydivide{
+    background-color: crimson;
+}
